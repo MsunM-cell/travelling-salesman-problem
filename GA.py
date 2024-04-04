@@ -5,8 +5,6 @@ import numpy as np
 import time
 import math
 
-from soupsieve import select
-
 
 # 读取城市的x，y坐标
 def load(txt):
@@ -200,7 +198,7 @@ def main():
         time_end = time.time()
         print()
         # print('Algorithm GA iterated',kmax,'times!\n',sep=' ')
-        best = 6110
+        best = 6110  # 手动设置
         print(time_end - time_start, cost, (cost - best) / best, sep=" ")  # 此处单位为秒
         '''print('You got the best solution:',cost,sep='\n')
         print(path)
@@ -219,5 +217,3 @@ def main():
 
 
 main()
-
-
